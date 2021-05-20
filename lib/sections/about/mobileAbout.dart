@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:roshanfolio/constants.dart';
 import 'package:roshanfolio/sections/navBar/navBarLogo.dart';
 import 'package:roshanfolio/widget/aboutMeText.dart';
-import 'package:roshanfolio/widget/communityIconBtn.dart';
 import 'package:roshanfolio/widget/toolsTech.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AboutMobile extends StatelessWidget {
-  final _communityLogoHeight = [50.0, 60.0, 30.0];
-
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -38,17 +34,6 @@ class AboutMobile extends StatelessWidget {
           SizedBox(
             height: height * 0.03,
           ),
-          // Row(
-          //   mainAxisSize: MainAxisSize.min,
-          //   children: [
-          //     for (int i = 0; i < kCommunityLogo.length; i++)
-          //       CommunityIconBtn(
-          //         icon: kCommunityLogo[i],
-          //         link: kCommunityLinks[i],
-          //         height: _communityLogoHeight[i],
-          //       ),
-          //   ],
-          // ),
           SizedBox(
             height: height * 0.025,
           ),

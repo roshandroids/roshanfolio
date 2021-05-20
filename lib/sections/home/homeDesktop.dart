@@ -42,7 +42,7 @@ class HomeDesktop extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Hello! ",
+                      "Hello Visitor !",
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.03, fontWeight: FontWeight.w300),
                     ),

@@ -70,12 +70,15 @@ class _ProjectCardState extends State<ProjectCard> {
           fit: StackFit.expand,
           children: [
             Column(
+              mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 widget.projectIcon != null
-                    ? Image.asset(
-                        widget.projectIcon,
-                        height: height * 0.1,
+                    ? Expanded(
+                        child: Image.asset(
+                          widget.projectIcon,
+                          height: height * 0.1,
+                        ),
                       )
                     : Container(),
                 widget.projectIconData != null
@@ -100,14 +103,16 @@ class _ProjectCardState extends State<ProjectCard> {
                 SizedBox(
                   height: height * 0.01,
                 ),
-                Text(
-                  widget.projectDescription,
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.montserrat(
-                      fontSize: height * 0.015,
-                      letterSpacing: 2.0,
-                      fontWeight: FontWeight.w100,
-                      height: width >= 600 ? 2.0 : 1.5),
+                Expanded(
+                  child: Text(
+                    widget.projectDescription,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.montserrat(
+                        fontSize: height * 0.015,
+                        letterSpacing: 2.0,
+                        fontWeight: FontWeight.w100,
+                        height: width >= 600 ? 2.0 : 1.5),
+                  ),
                 ),
                 SizedBox(
                   height: height * 0.01,

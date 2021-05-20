@@ -13,7 +13,7 @@ class ServiceMobile extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "\nWhat I Do",
+            "\nServices".toUpperCase(),
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
               fontWeight: FontWeight.w100,
@@ -21,12 +21,12 @@ class ServiceMobile extends StatelessWidget {
             ),
           ),
           Text(
-            "I may not be perfect, but I'm surely of some help :)\n\n",
+            "What services do I provide ?\n\n",
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
           CarouselSlider.builder(
-            itemCount: 5,
+            itemCount: kServicesIcons.length,
             itemBuilder: (BuildContext context, int itemIndex, int i) =>
                 Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),

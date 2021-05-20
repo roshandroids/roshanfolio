@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:roshanfolio/constants.dart';
 import 'package:roshanfolio/sections/navBar/navBarLogo.dart';
 import 'package:roshanfolio/widget/aboutMeText.dart';
-import 'package:roshanfolio/widget/communityIconBtn.dart';
 import 'package:roshanfolio/widget/toolsTech.dart';
 import 'package:google_fonts/google_fonts.dart';
 

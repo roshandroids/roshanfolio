@@ -19,9 +19,11 @@ class NavBarLogo extends StatelessWidget {
             "Roshan",
             style: TextStyle(fontFamily: "Agustina", fontSize: height ?? 20),
           ),
-          Text(
-            MediaQuery.of(context).size.width >= 1000 ? " />\t\t" : " />",
-            style: TextStyle(fontSize: height ?? 20),
+          Flexible(
+            child: Text(
+              MediaQuery.of(context).size.width >= 1000 ? " />\t\t" : " />",
+              style: TextStyle(fontSize: height ?? 20),
+            ),
           )
         ],
       ),

@@ -55,33 +55,25 @@ final kTools1 = ["HTML", "CSS", "Bootstrap", "JavaScript"];
 final kServicesIcons = [
   "assets/services/app.png",
   "assets/services/ui.png",
-  "assets/services/rapid.png",
-  "assets/services/blog.png",
   "assets/services/open.png",
 ];
 
 final kServicesTitles = [
   "Full App Development",
-  "UI/UX Designing",
-  "Rapid Prototyping",
-  "Technical Blog Writing",
+  "Web Development",
   "Open Source - GitHub",
 ];
 
 final kServicesDescriptions = [
-  "For now, I can only develop Android Apps using Flutter, that's because I don't own a MacBook right now so can't test or debug apps for iOS. Hopefully this missing piece will be filled soon :)",
-  "Although I'm mainly a flutter developer but I do care about the UI/UX for my client. Hence, I also do UI designing for applications. So, feel free to ask me for getting you UI/UX for your apps",
-  "Having a startup idea? Or maybe just want a prototype for your clients? With Flutter I can get you basic version of your app in no time and you are good to go for your project in future.",
-  "I have been writing technical blogs on Medium for over a year now. So, I can get you technical blogs with awesome header images, interesting topics and SEO friendly.\nCheck out my Medium profile @mhamzadev",
-  "Working as open source contributor on GitHub with 200+ stars and numerous forks on various projects liked and shared by other developers.\nCheck out my GitHub Profile @m-hamzashakeel",
+  "Currently, I am only involved in developing Android Apps using Flutter, I am not able to develop for iOS as I don't own a MacBook currently, so can't test or debug apps for iOS. Hopefully I will get one and start my journey in iOS development too. :)",
+  "Although I'm mainly a flutter mobile app developer but I also love to develop websites, I can design and develop websites as per your need. So, feel free to ask me for getting you a website done.",
+  "I'm trying to learn every new emerging technologies out there and in journey of learning, I would love to contribute to open source community too more in upcoming days which will definately help other developers.\nCheck out my GitHub Profile @roshandroids also my Gitlab profile @roshanode",
 ];
 
 final kServicesLinks = [
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
-  "https://www.fiverr.com/hamza6shakeel/get-you-modern-ui-design-using-adobe-xd",
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
-  "https://mhamzadev.medium.com",
-  "https://github.com/m-hamzashakeel"
+  "https://play.google.com/store/apps/developer?id=Roshan+Shrestha",
+  "https://roshansth.com.np/",
+  "https://github.com/roshandroids"
 ];
 
 // projects
@@ -158,7 +150,7 @@ final kContactTitles = [
 ];
 
 final kContactDetails = [
-  "Attock, Pakistan",
-  "(+92) 346 0159889",
-  "hamza.6.shakeel@gmail.com"
+  "Pokhara, Nepal",
+  "(+977) 986-0220305",
+  "shrestharoshan776@gmail.com"
 ];

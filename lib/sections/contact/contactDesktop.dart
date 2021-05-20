@@ -24,7 +24,7 @@ class ContactDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "Let's get in touch and build something together :)\n\n",
+            "Let's get your ideas turn into real products\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
           Row(
