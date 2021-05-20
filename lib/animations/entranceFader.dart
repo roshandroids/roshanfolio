@@ -7,7 +7,7 @@ class EntranceFader extends StatefulWidget {
   final Offset offset;
 
   const EntranceFader({
-    this.child,
+    required this.child,
     this.delay = const Duration(milliseconds: 0),
     this.duration = const Duration(milliseconds: 400),
     this.offset = const Offset(0.0, 32.0),
@@ -21,39 +21,40 @@ class EntranceFader extends StatefulWidget {
 
 class EntranceFaderState extends State<EntranceFader>
     with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-  Animation _dxAnimation;
-  Animation _dyAnimation;
+  AnimationController? _controller;
+  Animation<double>? _animation;
+  Animation? _dxAnimation;
+  Animation? _dyAnimation;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(vsync: this, duration: widget.duration);
     _dxAnimation =
-        Tween(begin: widget.offset.dx, end: 0.0).animate(_controller);
+        Tween(begin: widget.offset.dx, end: 0.0).animate(_animation!);
     _dyAnimation =
-        Tween(begin: widget.offset.dy, end: 0.0).animate(_controller);
+        Tween(begin: widget.offset.dy, end: 0.0).animate(_animation!);
     Future.delayed(widget.delay, () {
       if (this.mounted) {
-        _controller.forward();
+        _controller!.forward();
       }
     });
   }
 
   @override
   void dispose() {
-    _controller.dispose();
+    _controller!.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-      animation: _controller,
+      animation: _controller!,
       builder: (context, child) => Opacity(
-        opacity: _controller.value,
+        opacity: _controller!.value,
         child: Transform.translate(
-          offset: Offset(_dxAnimation.value, _dyAnimation.value),
+          offset: Offset(_dxAnimation!.value, _dyAnimation!.value),
           child: widget.child,
         ),
       ),

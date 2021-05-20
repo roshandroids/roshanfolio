@@ -4,7 +4,7 @@ import 'package:roshanfolio/constants.dart';
 class ToolTechWidget extends StatelessWidget {
   final String techName;
 
-  const ToolTechWidget({Key key, this.techName}) : super(key: key);
+  const ToolTechWidget({Key? key, required this.techName}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(

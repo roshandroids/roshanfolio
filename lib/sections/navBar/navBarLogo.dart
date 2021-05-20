@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NavBarLogo extends StatelessWidget {
-  final double height;
+  final double? height;
   NavBarLogo({this.height});
   @override
   Widget build(BuildContext context) {
