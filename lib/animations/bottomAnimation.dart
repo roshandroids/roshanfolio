@@ -14,9 +14,9 @@ class Animator extends StatefulWidget {
 
 class _AnimatorState extends State<Animator>
     with SingleTickerProviderStateMixin {
-  Timer? timer;
-  AnimationController? animationController;
-  Animation? animation;
+  Timer timer;
+  AnimationController animationController;
+  Animation animation;
 
   @override
   void initState() {
@@ -24,27 +24,27 @@ class _AnimatorState extends State<Animator>
     animationController =
         AnimationController(duration: Duration(seconds: 1), vsync: this);
     animation =
-        CurvedAnimation(parent: animationController!, curve: Curves.easeInOut);
-    timer = Timer(widget.time, animationController!.forward);
+        CurvedAnimation(parent: animationController, curve: Curves.easeInOut);
+    timer = Timer(widget.time, animationController.forward);
   }
 
   @override
   void dispose() {
-    animationController!.dispose();
+    animationController.dispose();
     super.dispose();
-    timer!.cancel();
+    timer.cancel();
   }
 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-      animation: animation!,
+      animation: animation,
       child: widget.child,
-      builder: (BuildContext context, Widget? child) {
+      builder: (BuildContext context, Widget child) {
         return Opacity(
-          opacity: animation!.value,
+          opacity: animation.value,
           child: Transform.translate(
-            offset: Offset(0.0, (-50 + animation!.value * 50).toDouble()),
+            offset: Offset(0.0, -50 + animation.value * 50),
             child: child,
           ),
         );
@@ -53,11 +53,11 @@ class _AnimatorState extends State<Animator>
   }
 }
 
-Timer? timer;
+Timer timer;
 Duration duration = Duration();
 
 wait() {
-  if (timer == null || !timer!.isActive) {
+  if (timer == null || !timer.isActive) {
     timer = Timer(Duration(microseconds: 120), () {
       duration = Duration();
     });
@@ -69,7 +69,7 @@ wait() {
 class WidgetAnimator extends StatelessWidget {
   final Widget child;
 
-  WidgetAnimator({required this.child});
+  WidgetAnimator({this.child});
 
   @override
   Widget build(BuildContext context) {

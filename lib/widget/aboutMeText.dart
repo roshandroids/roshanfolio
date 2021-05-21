@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AboutMeText extends StatelessWidget {
-  final TextAlign? textAlign;
+  final TextAlign textAlign;
   final double fontSize;
 
-  const AboutMeText({Key? key, this.textAlign, required this.fontSize})
-      : super(key: key);
+  const AboutMeText({Key key, this.textAlign, this.fontSize}) : super(key: key);
 
-  TextStyle _textStyle(double? fSize, bool bold) {
+  TextStyle _textStyle(double fSize, bool bold) {
     return GoogleFonts.montserrat(
       fontSize: fSize ?? 14,
       fontWeight: !bold ? FontWeight.w100 : FontWeight.w400,

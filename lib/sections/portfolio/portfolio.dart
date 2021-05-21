@@ -7,13 +7,9 @@ class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: SizedBox(),
-
-      //  PortfolioMobileTab(),
-      tablet: SizedBox(),
-      //  PortfolioMobileTab(),
-      desktop: SizedBox(),
-      //  PortfolioDesktop(),
+      mobile: PortfolioMobileTab(),
+      tablet: PortfolioMobileTab(),
+      desktop: PortfolioDesktop(),
     );
   }
 }

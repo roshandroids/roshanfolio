@@ -16,7 +16,7 @@ class ServiceDesktop extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "\nServices".toUpperCase(),
+            "\nWhat I Do",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
               fontWeight: FontWeight.w100,
@@ -24,7 +24,7 @@ class ServiceDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "What services do I provide ?\n\n",
+            "I may not be perfect, but I'm surely of some help :)\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
           Column(

@@ -38,7 +38,7 @@ class _HomeMobileState extends State<HomeMobile> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Hello visitor !".toUpperCase(),
+                      "Hello ! ".toUpperCase(),
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.025,
                           fontWeight: FontWeight.w200),

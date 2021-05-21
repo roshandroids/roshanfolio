@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ArrowOnTop extends StatefulWidget {
   final VoidCallback onPressed;
 
-  const ArrowOnTop({Key? key, required this.onPressed}) : super(key: key);
+  const ArrowOnTop({Key key, this.onPressed}) : super(key: key);
 
   @override
   _ArrowOnTopState createState() => _ArrowOnTopState();

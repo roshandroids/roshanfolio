@@ -123,18 +123,7 @@ final kProjectsDescriptions = [
   "Its my end semester project for a course Web Technologies. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
 ];
 
-final kProjectsLinks = [
-  "https://github.com/m-hamzashakeel/MedKit-Pharmacy-App-Using-Flutter",
-  "https://github.com/m-hamzashakeel/The_Holy_Quran_App",
-  "https://github.com/m-hamzashakeel/Here-I-Am-Alert-App",
-  "https://github.com/m-hamzashakeel/Covid19-Tracker-App",
-  "https://github.com/m-hamzashakeel/Messenger-Chat-Head-Flutter-UI",
-  "https://github.com/m-hamzashakeel/flutter.dev-Flutter-Web-Clone",
-  "https://github.com/m-hamzashakeel/Earbender_Music_App",
-  "https://github.com/m-hamzashakeel/FTP_GUI_Java",
-  "https://github.com/m-hamzashakeel/My-Order-Resturant-Ordering-System",
-  "https://github.com/m-hamzashakeel/Hidev_Web",
-];
+final kProjectsLinks = [];
 
 // Contact
 final kContactIcons = [

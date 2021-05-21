@@ -33,7 +33,7 @@ class HomeTab extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Hello visitor !".toUpperCase(),
+                      "Hello ! ".toUpperCase(),
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.03, fontWeight: FontWeight.w300),
                     ),
