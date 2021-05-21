@@ -4,28 +4,28 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatefulWidget {
-  final String projectIcon;
-  final IconData projectIconData;
+  final String? projectIcon;
+  final IconData? projectIconData;
   final String projectTitle;
   final String projectDescription;
-  final String projectLink;
-  final double cardWidth;
-  final double cardHeight;
-  final String backImage;
-  final Widget bottomWidget;
+  final String? projectLink;
+  final double? cardWidth;
+  final double? cardHeight;
+  final String? backImage;
+  final Widget? bottomWidget;
 
-  const ProjectCard(
-      {Key key,
-      this.backImage,
-      this.bottomWidget,
-      this.projectIcon,
-      this.projectTitle,
-      this.projectDescription,
-      this.projectLink,
-      this.projectIconData,
-      this.cardWidth,
-      this.cardHeight})
-      : super(key: key);
+  const ProjectCard({
+    Key? key,
+    this.backImage,
+    this.bottomWidget,
+    this.projectIcon,
+    required this.projectTitle,
+    required this.projectDescription,
+    this.projectLink,
+    this.projectIconData,
+    this.cardWidth,
+    this.cardHeight,
+  }) : super(key: key);
   @override
   _ProjectCardState createState() => _ProjectCardState();
 }
@@ -38,7 +38,7 @@ class _ProjectCardState extends State<ProjectCard> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: () => launch(widget.projectLink),
+      onTap: () => launch(widget.projectLink!),
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {
@@ -74,7 +74,7 @@ class _ProjectCardState extends State<ProjectCard> {
               children: [
                 widget.projectIcon != null
                     ? Image.asset(
-                        widget.projectIcon,
+                        widget.projectIcon!,
                         height: height * 0.1,
                       )
                     : Container(),
@@ -121,7 +121,7 @@ class _ProjectCardState extends State<ProjectCard> {
               child: FittedBox(
                 fit: BoxFit.fill,
                 child: widget.backImage != null
-                    ? Image.asset(widget.backImage)
+                    ? Image.asset(widget.backImage!)
                     : Container(),
               ),
             ),

@@ -8,14 +8,14 @@ class ServiceCard extends StatefulWidget {
   final String serviceTitle;
   final String serviceDescription;
   final String serviceLink;
-  final double cardWidth;
-  final double cardHeight;
+  final double? cardWidth;
+  final double? cardHeight;
 
   const ServiceCard(
-      {@required this.serviceIcon,
-      this.serviceTitle,
-      this.serviceDescription,
-      this.serviceLink,
+      {required this.serviceIcon,
+      required this.serviceTitle,
+      required this.serviceDescription,
+      required this.serviceLink,
       this.cardHeight,
       this.cardWidth});
 

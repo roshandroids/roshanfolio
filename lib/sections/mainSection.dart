@@ -55,7 +55,7 @@ class _MainPageState extends State<MainPage> {
     } else if (i == 2) {
       return Services();
     } else if (i == 3) {
-      SizedBox();
+      return SizedBox();
       // return Portfolio();
     } else if (i == 4) {
       return Contact();
@@ -139,7 +139,7 @@ class _MainPageState extends State<MainPage> {
           );
   }
 
-  Widget _appBarTabDesktop() {
+  AppBar _appBarTabDesktop() {
     return AppBar(
       elevation: 0.0,
       backgroundColor: Colors.transparent,
