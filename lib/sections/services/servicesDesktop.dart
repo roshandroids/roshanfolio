@@ -25,7 +25,7 @@ class ServiceDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "Let's get your ideas turn into real products\n\n",
+            "💻 Let's get your ideas turn into real products 📱\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
           CarouselSlider.builder(
@@ -42,6 +42,7 @@ class ServiceDesktop extends StatelessWidget {
               ),
             ),
             options: CarouselOptions(
+                scrollPhysics: BouncingScrollPhysics(),
                 height: height * 0.45,
                 autoPlay: true,
                 autoPlayInterval: Duration(seconds: 3),

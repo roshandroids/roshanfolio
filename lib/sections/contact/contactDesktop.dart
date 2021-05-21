@@ -25,7 +25,7 @@ class ContactDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "Let's get in touch and build something together :)\n\n",
+            "Let's get in touch and build something together. 💡\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
           CarouselSlider.builder(
@@ -43,7 +43,8 @@ class ContactDesktop extends StatelessWidget {
             options: CarouselOptions(
                 height: height * 0.3,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 5),
+                autoPlayInterval: Duration(seconds: 4),
+                scrollPhysics: BouncingScrollPhysics(),
                 enlargeCenterPage: true,
                 autoPlayCurve: Curves.fastOutSlowIn,
                 autoPlayAnimationDuration: Duration(milliseconds: 800),

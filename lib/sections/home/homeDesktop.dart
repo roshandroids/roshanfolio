@@ -51,7 +51,7 @@ class HomeDesktop extends StatelessWidget {
                       delay: Duration(seconds: 2),
                       duration: Duration(milliseconds: 800),
                       child: Image.asset(
-                        "assets/hi.gif",
+                        "assets/wave_hand.gif",
                         height: height * 0.05,
                       ),
                     ),

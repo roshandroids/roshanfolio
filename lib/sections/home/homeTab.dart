@@ -38,7 +38,7 @@ class HomeTab extends StatelessWidget {
                           fontSize: height * 0.03, fontWeight: FontWeight.w300),
                     ),
                     Image.asset(
-                      "assets/hi.gif",
+                      "assets/wave_hand.gif",
                       height: height * 0.05,
                     ),
                   ],

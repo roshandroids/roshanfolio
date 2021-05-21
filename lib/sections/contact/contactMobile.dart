@@ -21,7 +21,7 @@ class ContactMobileTab extends StatelessWidget {
             ),
           ),
           Text(
-            " :)\n\n",
+            "Let's get in touch and build something together. 💡\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
             textAlign: TextAlign.center,
           ),
@@ -40,7 +40,8 @@ class ContactMobileTab extends StatelessWidget {
             options: CarouselOptions(
                 height: height * 0.3,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 3),
+                autoPlayInterval: Duration(seconds: 4),
+                scrollPhysics: BouncingScrollPhysics(),
                 enlargeCenterPage: true,
                 autoPlayCurve: Curves.fastOutSlowIn,
                 autoPlayAnimationDuration: Duration(milliseconds: 800),

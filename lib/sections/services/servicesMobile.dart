@@ -14,6 +14,7 @@ class ServiceMobile extends StatelessWidget {
         children: [
           Text(
             "What services do I provide ?\n\n",
+            textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
               fontWeight: FontWeight.w100,
@@ -21,7 +22,7 @@ class ServiceMobile extends StatelessWidget {
             ),
           ),
           Text(
-            "Let's get your ideas turn into real products\n\n",
+            "💻 Let's get your ideas turn into real products 📱\n\n",
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
@@ -39,9 +40,10 @@ class ServiceMobile extends StatelessWidget {
               ),
             ),
             options: CarouselOptions(
+                scrollPhysics: BouncingScrollPhysics(),
                 height: height * 0.45,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 5),
+                autoPlayInterval: Duration(seconds: 3),
                 enlargeCenterPage: true,
                 autoPlayCurve: Curves.fastOutSlowIn,
                 autoPlayAnimationDuration: Duration(milliseconds: 800),

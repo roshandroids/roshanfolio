@@ -26,7 +26,12 @@ class _HomeMobileState extends State<HomeMobile> {
             right: -width * 0.3,
             child: Opacity(
               opacity: 0.7,
-              child: Image.asset('assets/roshan.png', height: height),
+              child: Image.asset(
+                'assets/roshan.png',
+                fit: BoxFit.cover,
+                height: height,
+                width: width,
+              ),
             ),
           ),
           Container(
@@ -44,7 +49,7 @@ class _HomeMobileState extends State<HomeMobile> {
                           fontWeight: FontWeight.w200),
                     ),
                     Image.asset(
-                      "assets/hi.gif",
+                      "assets/wave_hand.gif",
                       height: height * 0.03,
                     ),
                   ],
@@ -79,14 +84,15 @@ class _HomeMobileState extends State<HomeMobile> {
                       color: kPrimaryColor,
                     ),
                     TyperAnimatedTextKit(
-                        isRepeatingAnimation: true,
-                        speed: Duration(milliseconds: 50),
-                        textStyle: GoogleFonts.montserrat(
-                            fontSize: height * 0.03,
-                            fontWeight: FontWeight.w200),
-                        text: [
-                          " Flutter Developer",
-                        ]),
+                      isRepeatingAnimation: true,
+                      speed: Duration(milliseconds: 100),
+                      textStyle: GoogleFonts.montserrat(
+                          fontSize: height * 0.03, fontWeight: FontWeight.w200),
+                      text: [
+                        "Flutter Developer",
+                        "Web Developer",
+                      ],
+                    ),
                   ],
                 ),
                 SizedBox(
