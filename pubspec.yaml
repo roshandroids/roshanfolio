@@ -34,10 +34,17 @@ dependencies:
   scrollable_positioned_list: ^0.2.0-nullsafety.0
   animated_text_kit: ^4.2.1
   universal_html: ^2.0.8
+  get: ^4.1.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.9.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/roshan.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -54,7 +61,6 @@ flutter:
     - assets/
     - assets/fonts/
     - assets/services/
-    - assets/projects/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
