@@ -78,52 +78,44 @@ final kServicesLinks = [
 
 // projects
 final kProjectsBanner = [
-  "assets/projects/medkitB.png",
-  "assets/projects/quranB.png",
-  "assets/projects/hereiamB.png",
-  "assets/projects/covidB.png",
+  "assets/projects/digital_krishi.png",
+  "assets/projects/dogtor.png",
+  "assets/projects/easy_csp.png",
+  "assets/projects/pdf_slot.png",
+  "assets/projects/roshanfolio.png",
 ];
 
 final kProjectsIcons = [
-  "assets/projects/medkit.png",
-  "assets/projects/quran.png",
-  "assets/projects/hereiam.png",
-  "assets/projects/covid.png",
-  "assets/projects/messenger.png",
-  "assets/projects/flutter.png",
-  "assets/projects/earbender.png",
-  "assets/projects/java.png",
-  "assets/projects/android.png",
-  "assets/services/open.png",
+  "assets/projects/digital_krishi_logo.png",
+  "assets/projects/dogtor_logo.png",
+  "assets/projects/easycsp_logo.png",
+  "assets/projects/pdf_slot_logo.png",
+  "assets/projects/roshanfolio_logo.png",
 ];
 
 final kProjectsTitles = [
-  "MedKit",
-  "The Holy Qur'an",
-  "Here I Am",
-  "COVID-19",
-  "Messenger Chat Head UI",
-  "flutter.dev - Flutter Web",
-  "Earbender",
-  "File Transfer Protocol",
-  "My Order",
-  "Hidev",
+  "Digital Krishi",
+  "Dogtor",
+  "Easy CSP",
+  "PDF Slot",
+  "Roshanfolio",
 ];
 
 final kProjectsDescriptions = [
-  "A Phramacy app developed using Flutter powered with Firebase as database. It let's you find medicines for some common diseases to save your time and cost.",
-  "Application of Holy book of Muslims, Al-Qur'an. Developed using Flutter The data is fetched using API. Information about API is given at the bottom of README.md",
-  "Here I am is an Alert app that Sends alert SMS holding your location (Address and Google Maps) to your loved ones.",
-  "A live trakcer for COVID19 stats across the Globe and my Home country Pakistan. It uses APIs so the data is live.",
-  "Tried to clone the famous Chat Heads by Facebook Messenger using Flutter. Its basically in-app not exactly like the original chat head.",
-  "fFlutter Official Site clone using Flutter Web. Try the live site here. For the time being its not responsive fully so there might be issues considering the layout on your screen.",
-  "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
-  "GIt was my End semester project i.e. creating this FTP having a user interface in Java. It simply sends file from Client to Server but not the other way around.",
-  "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
-  "Its my end semester project for a course Web Technologies. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
+  "Digital Krishi is a mobile application that tends to provide a digital solution related to agriculture. Providing a common platform to share issues and search for solution related to agriculture can really help farmers to save time and increase productivity.",
+  "Dogtor is a simple mobile application that provides a common platform for dog-owners and veterinary doctor.",
+  "Easy CSP is an application targeted to the cloud workers of Cloudfactory. This application was the winner of the CF Hackathon 2020. This application aims to make the conduction of community service projects easier by letting the cloud workers collaborate.",
+  "A platform to read different books on your smartphone. Save it, Read it, Share it. Built with flutter and uses firebase as backend",
+  "Roshanfolio is a simple portfolio app of mine.",
 ];
 
-final kProjectsLinks = [];
+final kProjectsLinks = [
+  "https://github.com/roshandroids/Digital-Krishi",
+  "https://gitlab.com/roshanode/dogtor",
+  "https://gitlab.com/roshanode/easy_csp",
+  "https://gitlab.com/roshanode/pdf-slot",
+  "https://github.com/roshandroids/roshanfolio",
+];
 
 // Contact
 final kContactIcons = [

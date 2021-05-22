@@ -43,7 +43,7 @@ class ServiceDesktop extends StatelessWidget {
             ),
             options: CarouselOptions(
                 scrollPhysics: BouncingScrollPhysics(),
-                height: height * 0.45,
+                height: height * 0.5,
                 autoPlay: true,
                 autoPlayInterval: Duration(seconds: 3),
                 enlargeCenterPage: true,

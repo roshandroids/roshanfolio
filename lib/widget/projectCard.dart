@@ -100,14 +100,17 @@ class _ProjectCardState extends State<ProjectCard> {
                 SizedBox(
                   height: height * 0.01,
                 ),
-                Text(
-                  widget.projectDescription,
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.montserrat(
-                      fontSize: height * 0.015,
-                      letterSpacing: 2.0,
-                      fontWeight: FontWeight.w100,
-                      height: width >= 600 ? 2.0 : 1.5),
+                Expanded(
+                  child: Text(
+                    widget.projectDescription,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.montserrat(
+                        fontSize: height * 0.015,
+                        letterSpacing: 2.0,
+                        color: isHover ? Colors.white : Colors.transparent,
+                        fontWeight: FontWeight.w100,
+                        height: width >= 600 ? 2.0 : 1.5),
+                  ),
                 ),
                 SizedBox(
                   height: height * 0.01,
@@ -119,9 +122,14 @@ class _ProjectCardState extends State<ProjectCard> {
               duration: Duration(milliseconds: 400),
               opacity: isHover ? 0.0 : 1.0,
               child: FittedBox(
-                fit: BoxFit.fill,
+                fit: BoxFit.contain,
                 child: widget.backImage != null
-                    ? Image.asset(widget.backImage!)
+                    ? ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Image.asset(
+                          widget.backImage!,
+                        ),
+                      )
                     : Container(),
               ),
             ),
