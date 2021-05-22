@@ -13,6 +13,7 @@ class ProjectCard extends StatefulWidget {
   final double? cardHeight;
   final String? backImage;
   final Widget? bottomWidget;
+  final bool isContact;
 
   const ProjectCard({
     Key? key,
@@ -25,6 +26,7 @@ class ProjectCard extends StatefulWidget {
     this.projectIconData,
     this.cardWidth,
     this.cardHeight,
+    this.isContact = false,
   }) : super(key: key);
   @override
   _ProjectCardState createState() => _ProjectCardState();
@@ -107,7 +109,11 @@ class _ProjectCardState extends State<ProjectCard> {
                     style: GoogleFonts.montserrat(
                         fontSize: height * 0.015,
                         letterSpacing: 2.0,
-                        color: isHover ? Colors.white : Colors.transparent,
+                        color: widget.isContact
+                            ? Colors.white
+                            : isHover
+                                ? Colors.white
+                                : Colors.transparent,
                         fontWeight: FontWeight.w100,
                         height: width >= 600 ? 2.0 : 1.5),
                   ),

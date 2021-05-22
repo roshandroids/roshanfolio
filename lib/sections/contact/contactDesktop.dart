@@ -34,6 +34,7 @@ class ContactDesktop extends StatelessWidget {
                 Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: ProjectCard(
+                isContact: true,
                 cardWidth: width > 1200 ? width * 0.25 : width * 0.2,
                 projectIconData: kContactIcons[i],
                 projectTitle: kContactTitles[i],
